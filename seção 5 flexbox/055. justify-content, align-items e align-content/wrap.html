@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: Propriedades justify-content, align-items, flex-wrap, align-content e flex-direction</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#container {
+            background-color: red;
+            max-width: 750px;
+            height: 750px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap; /* quando os elementos filhos não couberem na mesma linha eles irão quebrar para a linha de baixo */
+        }
+
+        div.item {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox: propriedade 'flex-wrap' -> quebra de linha dos elementos</h1>
+    <div id="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

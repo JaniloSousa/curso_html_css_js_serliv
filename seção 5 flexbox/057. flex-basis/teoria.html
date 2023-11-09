@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade flex-basis</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        strong {
+            color: orange;
+        }
+
+        div#container1 {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        div.item1 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+
+            flex-basis: 25px;
+        }
+
+        /* ########################################################## */
+
+        div#container2 {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.item2 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+
+            flex-basis: 160px;
+        }
+    </style>
+</head>
+<body>
+    <h1>A Propriedade 'flex-basis' mexe com a largura ou altura de cada elemento filho, a depender de como esta configurada a propriedade 'flex-direction'</h1>
+
+    <h2><strong>Note:</strong> a propriedade 'flex-basis' deve ser colocada nos elementos filhos</h2>
+
+    <hr>
+
+    <h2>flex-direction: row (padrão) -> mexe com a largura</h2>
+    <div id="container1">
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+    </div>
+
+    <hr>
+
+    <h2>flex-direction: column -> mexe com a altura</h2>
+    <div id="container2">
+        <div class="item2"></div>
+        <div class="item2"></div>
+        <div class="item2"></div>
+    </div>
+</body>
+</html>

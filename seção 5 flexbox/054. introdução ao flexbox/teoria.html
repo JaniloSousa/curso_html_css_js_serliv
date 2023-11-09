@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a Teoria do Flex-box em CSS3</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#container {
+            background-color: red;
+            width: 700px;
+            height: 700px;
+            border: 1px solid black;
+
+            /* você aplica o 'display: flex;' no elemento pai para afetar os elementos filhos */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.item {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div.sub-item {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução a Teoria do Flex-box em CSS3</h1>
+    <p>você aplica o 'display: flex;' no elemento pai para afetar os elementos filhos</p>
+    <span style="font-size: 30px;">flex-container (elemento pai)</span>
+    <div id="container">
+        <div class="item">
+            <span>flex-item (elemento filho)</span>
+        </div>
+
+        <div class="item">
+            <span>flex-item (elemento filho)</span>
+            <div class="sub-item">
+
+            </div>
+        </div>
+
+        <div class="item">
+            <span>flex-item (elemento filho)</span>
+        </div>
+    </div>
+</body>
+</html>

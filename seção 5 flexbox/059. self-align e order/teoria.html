@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As propriedades order e align-self</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        strong {
+            color: orange;
+        }
+
+        div#container {
+            background-color: red;
+            max-width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        div#container div {
+            background-color: yellow;
+            width: 330px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        div#container div#item1 {
+            order: 123;
+            align-self: flex-end;
+        }
+
+        div#container div#item2 {
+            order: -1000000;
+            align-self: flex-start;
+        }
+
+        div#container div#item3 {
+            order: 1;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedades 'order' e 'align-self'</h1>
+    <ul>
+        <li>order -> a ordem que os elementos vai aparecer</li>
+        <li>align-self -> é o alinhamento vertical/horizontal(a depender da propriedade flex-direction) individual de cada elemento filho</li>
+    </ul>
+    <div id="container">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+    </div>
+</body>
+</html>

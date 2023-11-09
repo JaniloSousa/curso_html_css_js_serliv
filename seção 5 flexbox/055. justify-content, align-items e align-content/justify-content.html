@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox: Propriedades justify-content, align-items, flex-wrap, align-content e flex-direction</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#container1 {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            display: flex; /* você coloca no pai mas afeta os filhos */
+            justify-content: flex-start; /* alinhamento horizontal no início */
+        }
+
+        div.item1 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        /* ============================================================ */
+
+        div#container2 {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: flex-end; /* alinhamento horizontal no final */
+        }
+
+        div.item2 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        /* ============================================================ */
+
+        div#container3 {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: center; /* alinhamento horizontal no meio */
+        }
+
+        div.item3 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        /* ============================================================ */
+
+        div#container4 {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        div.item4 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        /* ============================================================ */
+
+        div#container5 {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        div.item5 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        /* ============================================================ */
+
+        div#container6 {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        div.item6 {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox: propriedade 'justify-content' -> alinhamento horizontal</h1>
+    <div id="container1">
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+    </div>
+
+    <hr>
+
+    <div id="container2">
+        <div class="item2"></div>
+        <div class="item2"></div>
+        <div class="item2"></div>
+    </div>
+
+    <hr>
+
+    <div id="container3">
+        <div class="item3"></div>
+        <div class="item3"></div>
+        <div class="item3"></div>
+    </div>
+
+    <hr>
+    <h2>space-between</h2>
+    <p>espaços distribuídos igualmente entre os elementos</p>
+    <div id="container4">
+        <div class="item4"></div>
+        <div class="item4"></div>
+        <div class="item4"></div>
+    </div>
+
+    <hr>
+    <h2>space-around</h2>
+    <p>espaços distribuídos igualmente ao redor dos elementos (com soma de espaços)</p>
+    <div id="container5">
+        <div class="item5"></div>
+        <div class="item5"></div>
+        <div class="item5"></div>
+    </div>
+
+    <hr>
+    <h2>space-evenly</h2>
+    espaços distribuídos igualmente ao redor dos elementos (sem soma de espaços)
+    <div id="container6">
+        <div class="item6"></div>
+        <div class="item6"></div>
+        <div class="item6"></div>
+    </div>
+</body>
+</html>

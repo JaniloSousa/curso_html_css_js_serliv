@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As propriedades flex-grow e flex-shrink</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        strong {
+            color: orange;
+        }
+
+        div#container {
+            background-color: red;
+            max-width: 1000px;
+            height: 500px;
+            border: 1px solid black;
+
+            display: flex;
+        }
+
+        div#container div {
+            background-color: yellow;
+            width: 330px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        div#container div#item1 {
+            flex-grow: 1;
+            flex-shrink: 3;
+        }
+
+        div#container div#item2 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div#container div#item3 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade 'flex-shrink'</h1>
+    <p>Essa propriedade se refere a taxa de encolhimento com que cada elemento filho vai diminuir de tamanho(largura) caso os itens começarem a ser espremidos na tela <strong>segundo sua largura especificada na propriedade 'width'. Ou seja, a propriedade 'flex-shrink' atua em cima da propriedade 'width'!</strong>.</p>
+    <div id="container">
+        <div id="item1"></div>
+        <div id="item2"></div>
+        <div id="item3"></div>
+    </div>
+</body>
+</html>
